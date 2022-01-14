@@ -1,0 +1,78 @@
+.hide {
+    display: none !important;
+}
+
+.sketchpad {
+    display: flex;
+    color: transparent;
+    flex-direction: column;
+}
+
+.sketch {
+    height: 300;
+    width: 300;
+    margin-left: 4rem;
+    margin-top: 0.6rem;
+}
+
+.sketch_tools {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brush {
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.brush.selected,
+.brush:hover {
+    background-color: white;
+    background-color: transparent;
+}
+
+#brush_1 {
+    height: 8px;
+    width: 8px;
+}
+
+#brush_2 {
+    height: 12px;
+    width: 12px;
+}
+
+#brush_3 {
+    height: 24px;
+    width: 24px;
+}
+
+.view_holders {
+    flex-grow: 1;
+    background-color: transparent;
+    position: relative;
+}
+
+.canvas_holder canvas {
+    background-color: transparent;
+}
+
+
+/* .canvas_holder {
+    text-align: center;
+    width: 120%;
+    height: calc(100% - 36px);
+} */
+
+.saliency_holder {
+    position: absolute;
+    top: 0;
+    opacity: 0.9;
+}
+
+.view_holders canvas {
+    background-color: transparent;
+    /* border: solid 1px black; */
+}
